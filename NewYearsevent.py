@@ -3,16 +3,24 @@ print()
 print("Sylwester 2021/2022")
 user_choice = -1
 
-organizatorzy = ["Dawid Chryc, Maciek Bierówka , Kamil Szopa, Patryk Pindel"]
 miejsce = ("Remiza Strażacka w Bogdanówce")
-
 
 
 def show_gosci():
     lista_index = 1
     for nowaosoba in lista:
-        print(nowaosoba + "[" + str(lista_index) + "]")
+        print("[" + str(lista_index) + "]",nowaosoba+"\n")
         lista_index +=1
+
+def pokaz_organizatorow():
+    organizatorzy_index = 1
+    plik = open("listaorganizatorow.txt", "r")
+    plik.readable()
+    for linia in plik:
+        print("[" + str(organizatorzy_index) + "]",linia)
+        organizatorzy_index +=1
+    plik.close()
+
 def delete_osoba():
     lista_index = int(input("Podaj indeks osoby do usunięcia: "))
 
@@ -21,46 +29,83 @@ def delete_osoba():
         return
 
     lista.pop(lista_index)
-    print("Osoba została usunięta z listy gości!")
-    print()
+    print("Osoba została usunięta z listy gości!\n")
+
 
 def save_lista_to_file():
-    file = open("listagosci.txt", "w")
+    plik = open("listagosci.txt", "w")
     for nowaosoba in lista:
-        file.write(nowaosoba+"\n")
-    file.close()
+        plik.write(nowaosoba)
+    print("Lista gości zaaktualizowana pomyślnie.\n")
+    plik.close()
 
-while user_choice != 7:
+def zaplata():
+    plik = open("zaplatazasylwestra.txt", "r")
+    if plik.readable():
+        for line in plik:
+            print(line)
+
+def zawartoscceny():
+    plik = open("zawartoscsylwestracena.txt", "r")
+    if plik.readable():
+        for line in plik:
+            print(line)
+
+def ograniczeniewiekowe():
+    wiek = input("Podaj swoją date urodzenia: ")
+    ilosclat = (2021 - int(wiek))
+    if ilosclat >= 18:
+                print("Posiadasz wymagany wiek.")
+    else:
+                print("Jesteś za młody, żeby do nas przyjść.")
+
+while user_choice != 11:
+
     if user_choice == 1:
-        print(organizatorzy)
-    print()
+        pokaz_organizatorow()
     if user_choice == 2:
         print(miejsce)
-    print()
     if user_choice == 3:
         show_gosci()
-        print()
     if user_choice == 4:
         nowaosoba = input("Wpisz imię i nazwisko osoby: ")
         lista.append(nowaosoba)
-        print("Osoba została dodana do listy!")
-        print()
+        print("Osoba została dodana do listy!\n")
     if user_choice == 5:
         delete_osoba()
-
     if user_choice == 6:
         save_lista_to_file()
+    if user_choice == 7:
+        zaplata()
+    if user_choice == 8:
+        print("Koszt imprezy to 120zł/osobę.")
+    if user_choice == 9:
+        zawartoscceny()
+    if user_choice == 10:
+        ograniczeniewiekowe()
+    if user_choice > 11 or user_choice < 1:
+        print("Brak informacji pod podanym podpunktem, podaj inną wartość z katalogu!")
 
-    print("Podstawowe informacje: ")
-    print()
+
+    print("\nPodstawowe informacje: \n")
     print("1. Lista organizatorów")
     print("2. Miejsce organizacji")
     print("3. Lista gości")
     print("4. Dodaj gościa")
     print("5. Usuń gościa")
-    print("6. Zapisz zmiany do pliku")
-    print("7. Wyjdź")
-    print()
+    print("6. Zapisz listę gości do pliku tekstowego")
+    print("7. Informacje o zapłatach")
+    print("8. Cena sylwestra")
+    print("9. Zawartość ceny")
+    print("10. Ograniczenia wiekowe")
+    print("11. Wyjdź\n")
+
 
 
     user_choice = int(input("Wybierz liczbę: "))
+
+
+
+
+
+
