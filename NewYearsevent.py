@@ -1,6 +1,6 @@
 from listagosci import lista
-print()
-print("Sylwester 2021/2022")
+from zaplatazasylwestra import text
+print("\nSylwester 2021/2022")
 user_choice = -1
 
 miejsce = ("Remiza Strażacka w Bogdanówce")
@@ -40,7 +40,7 @@ def save_lista_to_file():
     plik.close()
 
 def zaplata():
-    plik = open("zaplatazasylwestra.txt", "r")
+    plik = open("zaplatazasylwestra.py", "r")
     if plik.readable():
         for line in plik:
             print(line)
@@ -52,7 +52,7 @@ def zawartoscceny():
             print(line)
 
 def ograniczeniewiekowe():
-    wiek = input("Podaj swoją date urodzenia: ")
+    wiek = input("Podaj swoja date urodzenia: ")
     ilosclat = (2021 - int(wiek))
     if ilosclat >= 18:
                 print("Posiadasz wymagany wiek.")
@@ -84,7 +84,7 @@ while user_choice != 11:
     if user_choice == 10:
         ograniczeniewiekowe()
     if user_choice > 11 or user_choice < 1:
-        print("Brak informacji pod podanym podpunktem, podaj inną wartość z katalogu!")
+        print("Brak informacji pod podanym podpunktem, podaj inną wartość!")
 
 
     print("\nPodstawowe informacje: \n")
