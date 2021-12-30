@@ -1,5 +1,4 @@
 from listagosci import lista
-from zaplatazasylwestra import text
 print("\nSylwester 2021/2022")
 user_choice = -1
 
@@ -8,9 +7,12 @@ miejsce = ("Remiza Strażacka w Bogdanówce")
 
 def show_gosci():
     lista_index = 1
+    plik = open("listagosci.py", "r")
+    plik.readable()
     for nowaosoba in lista:
-        print("[" + str(lista_index) + "]",nowaosoba+"\n")
-        lista_index +=1
+        print("[" + str(lista_index) + "]", nowaosoba)
+        lista_index += 1
+    plik.close()
 
 def pokaz_organizatorow():
     organizatorzy_index = 1
@@ -83,7 +85,7 @@ while user_choice != 11:
         zawartoscceny()
     if user_choice == 10:
         ograniczeniewiekowe()
-    if user_choice > 11 or user_choice < 1:
+    if user_choice > 11:
         print("Brak informacji pod podanym podpunktem, podaj inną wartość!")
 
 
