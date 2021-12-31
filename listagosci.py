@@ -57,4 +57,6 @@ lista =["Karolina Nawara" ,
 "Łukasz Ożarowski" ,
 "Justyna Hanusiak" ,
 "Wiktor Kołodziejczyk" ,
-"Osoba Towarzyszaca Jatyki"]
+"Osoba Towarzyszaca Jatyki",
+"Beata Kołodziej",
+"Sławek Kołodziej"]
