@@ -1,0 +1,125 @@
+{
+    "event_info": {
+        "name": "Sylwester 2021/2022",
+        "location": "Remiza Strażacka w Bogdanówce",
+        "price_per_person": 120
+    },
+    "guests": [
+        {
+            "name": "Dawid Stopa",
+            "paid": false
+        },
+        {
+            "name": "Tomasz Romaniak",
+            "paid": true
+        },
+        {
+            "name": "Krzysiek Horwacik",
+            "paid": true
+        },
+        {
+            "name": "Kacper Wójcicki",
+            "paid": true
+        },
+        {
+            "name": "Sławek Kosek",
+            "paid": false
+        },
+        {
+            "name": "Dominika Gierat",
+            "paid": false
+        },
+        {
+            "name": "Dawid Filipek",
+            "paid": false
+        },
+        {
+            "name": "Paweł Bubiak",
+            "paid": false
+        },
+        {
+            "name": "Wiki Bagadzińska",
+            "paid": false
+        },
+        {
+            "name": "Szymon Kołodziej",
+            "paid": false
+        },
+        {
+            "name": "Tomasz Jątyka",
+            "paid": false
+        },
+        {
+            "name": "Beata Mizera",
+            "paid": false
+        },
+        {
+            "name": "Patryk Pindel",
+            "paid": false
+        },
+        {
+            "name": "Magda Poznańska-Książek",
+            "paid": false
+        },
+        {
+            "name": "Kamil Dziubras",
+            "paid": false
+        },
+        {
+            "name": "Michał Cieżak",
+            "paid": false
+        },
+        {
+            "name": "Tomek Górni",
+            "paid": false
+        },
+        {
+            "name": "Piotr Jan Ożarowski",
+            "paid": false
+        },
+        {
+            "name": "Agata Marczewska",
+            "paid": false
+        },
+        {
+            "name": "Maciej Bierówka",
+            "paid": true
+        },
+        {
+            "name": "Grzesiek Książek",
+            "paid": true
+        },
+        {
+            "name": "Joanna Szopa",
+            "paid": true
+        },
+        {
+            "name": "Łukasz Ożarowski",
+            "paid": false
+        },
+        {
+            "name": "Justyna Hanusiak",
+            "paid": false
+        },
+        {
+            "name": "Wiktor Kołodziejczyk",
+            "paid": false
+        },
+        {
+            "name": "Konrad Marszalik",
+            "paid": false
+        },
+        {
+            "name": "Dawid Chryc",
+            "paid": false
+        },
+        {
+            "name": "Lukasz Florek",
+            "paid": false
+        }
+    ],
+    "organizers": [
+        "Dawid",
+        "Shongini"
+    ]
+}
